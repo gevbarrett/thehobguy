@@ -1,0 +1,22 @@
+    <section class="hero | bg-primary-700 section">
+      <div class="container" data-type="wide">
+        <div class="even-columns vertically-centered">
+          <div class="">
+            <h1 class="hero-heading clr-neutral-000 margin-block-end-4">
+             
+              <span class="clr-yellow-400">{{ hero.header}}</span>
+            </h1>
+            <h2 class="clr-neutral-000 margin-block-end-4">{{hero.subhead}}</h2>
+            <p class="clr-neutral-000 limit-text-70">{{hero.text}}
+            </p>
+            <div class="flex-group margin-block-start-4">
+              <a href="{{ hero.link1 }}" class="button" data-type="accent">{{ hero.button1 }}</a>
+              <a href="{{ hero.link1 }}" class="button" data-type="trans">{{ hero.button2 }}</a>
+            </div>
+          </div>
+          <div>
+            <img class="hero__image | border-radius-1" width="588" height="391" src="{{hero.image}}" alt="{{hero.alt}}">
+          </div>
+        </div>
+      </div>
+    </section>

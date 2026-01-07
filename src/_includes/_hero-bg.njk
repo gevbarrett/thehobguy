@@ -1,0 +1,72 @@
+<section class="hero-bg ">
+
+
+        {# <header class="site-header">
+            <div class="container" data-type="wide">
+              <div class="site-header__inner">
+
+                <div class="logo padding-inline-4">
+                <a href="/"> 
+                <img src="{{settings.logo}}" alt="{{settings.title}} Logo">
+                
+             
+                </a>
+
+                  <button href="javascript:void(0);" aria-label="Click to Open Mobile Menu" class="icon" onclick="myFunction()">
+                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg> <span class="sr-only">Open Mobile Menu</span>
+
+                  </button>
+                </div>
+
+
+                <div class="nav" id="myTopnav">
+                  <a href="/">Home</a>
+                  {% set navPages = collections.all | eleventyNavigation('Home') %}
+                      {%- for entry in navPages %}    
+                          <a {% if entry.url == page.url %} class="clr-primary-000 active"{% endif %} href="{{ entry.url | url }}">{{ entry.title }}</a>    
+                      {%- endfor %}
+                
+                <a href="/contact/" class="button" data-type="accent">Get Quote</a>
+
+                </div>
+
+                <script>
+                    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+                      function myFunction() {
+                        var x = document.getElementById("myTopnav");
+                        if (x.className === "nav") {
+                          x.className += " responsive";
+                        } else {
+                          x.className = "nav";
+                        }
+                      }
+                  </script>
+
+              </div>
+            </div>
+
+        </header> #}
+
+
+
+      <div class="container">
+
+        <div class="hero-bg-text">
+          <div class="clr-neutral-000">
+            <h1 class="hero-heading margin-block-end-2 clr-neutral-000">
+            
+              {{ hero.header}}
+            </h1>
+            <h2 class="clr-neutral-000 margin-block-end-4">{{hero.subhead}}</h2>
+            <p class="limit-text-60 margin-block-end-4">{{hero.text}}
+            </p>
+             <div class="flex-group margin-block-start-4">
+              <a href="{{ hero.link1 }}" class="button" data-type="accent">{{ hero.button1 }}</a>
+              <a href="{{ hero.link1 }}" class="button" data-type="trans">{{ hero.button2 }}</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+</section>
+

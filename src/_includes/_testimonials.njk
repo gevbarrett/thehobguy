@@ -1,0 +1,29 @@
+<section class="section">
+    <div class="container">
+
+        <h2 class="text-center margin-block-end-4">{{testimonials.header}}</h2>
+        <p class="content-limit-text text-center  margin-block-end-8">{{testimonials.text}}</p>
+
+        <div class="grid-auto-fit">
+            {% for post in testimonials.list %}
+            <div class="testimonial-card flow">
+                <div class="even-columns">
+                    <h3>{{post.header}}</h3>
+                    <img src="/images/google.png" width="40" height="40" alt="Google Logo">
+                </div>
+                <div class="clr-yellow-400"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p >"{{post.description}}"</p>
+                <h4 class="fw-bold">{{post.name}}</h4>
+                <p >{{post.company}}</p>
+                {# <i class="testimonial-quote fa-duotone fa-quote-left fa-3x"></i> #}
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="padding-block-8 text-center">
+              <a class=" text-center" data-type="primary" href="{{settings.google}}">Read More Reviews on Google</a>
+
+        </div>
+
+    </div>  
+</section>  

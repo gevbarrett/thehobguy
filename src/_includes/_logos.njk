@@ -1,0 +1,13 @@
+<section class="section">
+
+<div class="container">
+
+    <h2 class="heading-2 text-center margin-block-end-4">Our Clients</h2>
+    <p class="text-center main-content-limit margin-block-end-10"></p>
+    <div class="flex-group">
+        {% for post in logos %}
+        <img class="logo-list mx-auto" loading="lazy" src="{{post.image}}" alt="{{post.alt}}">
+        {% endfor %}
+    </div>
+</div>
+</section>

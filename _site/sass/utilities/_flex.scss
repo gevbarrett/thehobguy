@@ -1,0 +1,12 @@
+@use "../abstracts/" as *;
+
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+
+    @include mq(medium) {
+       flex-wrap: wrap;
+       
+      }
+}

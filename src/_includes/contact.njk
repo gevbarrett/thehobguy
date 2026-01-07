@@ -1,0 +1,71 @@
+{% include '_header.njk' %}
+{% include '_contact-bar.njk'%}
+
+{% include '_navigation.njk' %}
+
+
+<div class="container">
+
+    
+         <h1 class="heading-1 margin-block-start-8">{{ h1 }}</h1>
+         <div class="breadcrumb">
+          {% set breadcrumb = collections.all | eleventyNavigationBreadcrumb( eleventyNavigation.key, { includeSelf: true }) %}
+          {{ breadcrumb | eleventyNavigationToHtml | safe }}
+         </div>
+
+    <div class="even-columns margin-block-8 gap-12">
+        <div class=" flow">
+            {{ content |safe }}
+
+            {# <a href="tel:{{settings.phone}}">Tel: {{settings.phone}}</a> #}
+            <br>
+            <a href="mailto:{{settings.email}}"><span class="sr-only">Email:</span> {{settings.email}}</a>
+
+
+            {# <a href="{{settings.facebook}}"><i class="fab fa-facebook fa-2x m-1 "></i><p class="sr-only">Facebook</p></a> #}
+        </div>
+
+        <div class="vertically-centered">
+            <h2 class="margin-block-end-4">Get in touch </h2>
+
+            <form 
+              name="{{settings.name}} Contact Page Form"
+              action="/success/" 
+              method="POST" 
+             netlify-honeypot="bot-field"
+              data-netlify-recaptcha="true" 
+              data-netlify="true">
+
+            <label>Your Name: <input type="text" placeholder="Name" name="name" ></label>   
+
+            <label>Your Email: <input type="email" placeholder="Email" name="email" ></label>
+                 <p class="sr-only">
+                <label>
+                Don’t fill this out if you’re human: <input type="hidden" name="bot-field" >
+                </label>
+            </p>
+
+            <p><label>Phone:<br> <input type="tel" placeholder="Phone" name="phone" required ></label></p>
+
+
+            <label>Message: </label>
+            <br>
+            <textarea name="message" placeholder="Write your message here..."></textarea>
+        
+
+            <div data-netlify-recaptcha="true"></div>
+
+            <input class="margin-block-start-6" name="check" type="checkbox" required>  I agree to the handling of my data in accordance with the <a href="/privacy-policy/" >{{settings.name}} Privacy Policy.</a>
+            <br>
+
+          
+            <button class="button margin-block-5" data-type="accent" type="submit" value="Send">
+            <i class="fa fa-paper-plane padding-inline-end-4"></i> SEND MESSAGE</button>
+        
+            </form>
+        </div>
+
+    </div>
+</div>
+
+{% include '_footer.njk' %}

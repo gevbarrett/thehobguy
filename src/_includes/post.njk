@@ -1,0 +1,64 @@
+{% include '_header.njk'%}
+{% include '_navigation.njk'%}
+
+<div class="container margin-block-8">
+
+    <div class="sidebar-grid gap-12">
+        <div class="">
+            <h1 class="heading-1">{{ title }}</h1>
+
+            <div class="breadcrumb">
+            {% set breadcrumb = collections.all | eleventyNavigationBreadcrumb( eleventyNavigation.key, { includeSelf: true }) %}
+            {{ breadcrumb | eleventyNavigationToHtml | safe }}
+            </div>
+
+            <img src="{{ image }}" alt="{{ alt }}">
+             <div class="flex-group">
+                {# <img src="" alt=""> #}
+                <p>Author: {{author}}</p>
+                <li>{{readtime}}</li>
+                <li>{{ date | postDate }}</li>
+            </div>
+            {{ content | safe }}
+
+            {% set previousPost = collections.services | getPreviousCollectionItem %}
+            {% set nextPost = collections.services | getNextCollectionItem %}
+            <div class="even-columns margin-block-start-8">
+            {% if previousPost %} <div><h3 class=" margin-block-start-8">See Previous Service:</h3> <a href="{{ previousPost.url }}">{{ previousPost.data.h1 }}</a></div>{% endif %}
+            {% if nextPost %} <div><h3 class=" margin-block-start-8">See Next Service:</h3> <a href="{{ nextPost.url }}">{{ nextPost.data.h1 }}</a></div>{% endif %}
+            </div>
+        </div>
+
+        <div class="single-column-grid">      
+                {# <h3 class="text-center"></h3> #}
+
+            <div class=" flow">
+
+                <div class="mx-auto flow">
+                        <h3 class="margin-block-end-4">Latest Posts</h3>
+                        <ul class=" list-style-none  flow">
+                        {% for post in collections.blog %}
+                        <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+                        {# <p> <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time> #}
+                        
+                        {% endfor %}
+                        </ul>
+                </div>
+
+                <div class="flow">
+                    <div class="flow"><h3>Follow Us</h3></div>
+                        <div class="margin-inline-end-8">
+                            <a class="margin-inline-end-8" href="{{Settings.facebook}}"><i class="fab fa-facebook fa-2x m-1"><p class="sr-only">Facebook</p></i></a>
+                            <a href="{{settings.instagram}}"><i class="fab fa-instagram fa-2x m-1"></i><p class="sr-only">instagram</p></a>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            
+        </div>  
+        
+    </div>
+</div>
+
+{% include '_footer.njk'%}

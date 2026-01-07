@@ -1,0 +1,30 @@
+<section class="section">
+    <div class="container">
+
+        <h2 class="text-center margin-block-end-8">Why Choose Us?</h2>
+
+        <div class="even-columns">
+            {% for post in bullet %}
+            <div class="card-bullets flow">
+                <div class="card__icon ">
+                    <i class="icon {{ post.icon}} fa-3x py-1"></i>                
+                </div>
+                <h3 class="card-bullets__heading ">
+                  {{ post.header }}
+                </h3>
+                <p class="">
+                  {{post.text}}
+                </p>
+            </div>
+            {% endfor %}
+   
+
+
+        </div>
+
+
+
+    </div>
+
+
+</section>

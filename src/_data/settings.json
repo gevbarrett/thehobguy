@@ -1,0 +1,19 @@
+{
+    "domain": "acme.ie",
+    "name": "Acme ",
+    "description": " In sodales tincidunt enim, eu auctor velit congue vitae. Fusce varius consequat auctor. Ut ac enim sed dolor elementum porttitor in quis dui.",
+    "banner": "/images/",
+    "phone": "0871234567",
+    "phone_display": "087 123 4567",
+    "tagline": "Professional Services",
+    "logo": "/images/logo.svg",
+    "footer_logo": "/images/logo.png",
+    "facebook": "https://www.facebook.com/",
+    "linkedin": "https://www.linkedin.com/",
+    "google": "https://google.com/",
+    "email": "info@acme.ie",
+    "address1": "Unit 3A",
+    "address2": "",
+    "address3": "Co. Tipperary",
+    "eircode": ""
+  }

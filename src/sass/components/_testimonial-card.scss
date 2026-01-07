@@ -1,0 +1,19 @@
+@use "../abstracts/" as *;
+
+
+.testimonial-card{
+
+    // display: grid;
+    // grid-template-rows: auto;
+    gap: $card-flow-spacing;
+    padding: $card-padding;
+    background-color: rgb(255, 255, 255);
+    font-family: $card-font-family;
+    color: $card-color-default;
+    line-height: $card-line-height;
+    box-shadow: $card-shadow;
+    border-radius: 5px;
+    border: 1px solid rgb(226, 226, 226);
+    align-items: start;
+    
+}

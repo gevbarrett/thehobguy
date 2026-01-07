@@ -1,0 +1,30 @@
+<!-- Web Hosting BANNER  -->
+<section class="section">
+    <div class="container ">     
+        <div class="even-columns  vertically-centered">
+                    
+            <div class="flow">
+                <h2>{{panel.header}}</h2>
+                <p>{{panel.subHead}}</p>
+                <br>
+                {% for post in panel.info %}
+                <div class="auto-columns">  
+                        <i class="{{post.icon}} clr-accent-400 fa-2x"></i>
+                        <div class="list-item-content">                    
+                        <h3 class="margin-block-end-2">{{post.header }}</h3>
+                        <p>{{post.text}} </p>
+                        </div>
+                </div>
+                {% endfor %}
+
+                {# <p>{{infoPanel.infoPanelText}}</p> #}
+                <br>
+                <a class="button" data-type="primary" href="/services/">View Our Services</a>
+                {# <strong>This gives you peace of mind knowing your website is secure.</strong> #}     
+            </div>
+
+            <div class="mx-auto"> <img class="max-image" loading="lazy" src="{{panel.image}}" width="500" height="700" alt="{{panel.alt}}"></div>
+        </div>
+               {# <a class="btn-1 text-center" href="/services" class="btn btn-dark">See More Services</a> #}
+    </div>
+</section>

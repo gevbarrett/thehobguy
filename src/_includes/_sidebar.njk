@@ -1,0 +1,22 @@
+<div>
+
+    <h2>Our Landscaping Services</h2>
+    <br>
+    
+   <div class="mx-auto flow">
+                        {# <h3 class="margin-block-end-4">Our Services</h3> #}
+                        <ul class=" list-style-none  flow">
+                        {% for post in collections.services %}
+                        <li><a class="decoration-none" href="{{ post.url }}">{{ post.data.h1 }}</a></li>
+                        {# <p> <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time> #}
+                        
+                        {% endfor %}
+                        </ul>
+   </div>
+
+     
+       
+    <p class="heading-3 clr-neutral-000 margin-block-start-8">{{test.header}}</p>
+    <a href="/contact/" class="button" data-type="accent">Contact Us</a>
+
+</div>

@@ -1,0 +1,47 @@
+
+
+  <header class="site-header">
+      <div class="container" data-type="wide">
+        <div class="site-header__inner">
+
+          <div class="logo padding-inline-4">
+
+           <a href="/"><img src="{{settings.logo}}" alt="{{settings.title}} Logo"></a>
+
+            <a class="icon" href="javascript:void(0);" aria-label="Click to Open Mobile Menu" onclick="myFunction()">
+              <i class="fa-solid fa-bars fa-2x"></i>           
+            </a>
+          </div>
+
+
+          <div class="nav" id="myTopnav">
+            <a href="/">Home</a>
+            {% set navPages = collections.all | eleventyNavigation('Home') %}
+                {%- for entry in navPages %}
+                {% if not entry.hide %}    
+                    <a {% if entry.url == page.url %} class="clr-primary-000 active"{% endif %} href="{{ entry.url | url }}">{{ entry.title }}</a>    
+                {%- endif %}
+                {%- endfor %}
+          
+           <a href="/contact/" class="button" data-type="accent">Button</a>
+
+          </div>
+
+           <script>
+               /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+                function myFunction() {
+                  var x = document.getElementById("myTopnav");
+                  if (x.className === "nav") {
+                    x.className += " responsive";
+                  } else {
+                    x.className = "nav";
+                  }
+                }
+            </script>
+
+        </div>
+      </div>
+
+  </header>
+
+  <main>

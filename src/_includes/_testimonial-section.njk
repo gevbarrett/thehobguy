@@ -1,0 +1,17 @@
+        
+<div class="section bg-primary-100 padding-8 ">
+    <h2 class="margin-block-end-4">What Our Customers Say</h2>
+    <div class="even-columns vertically-centered">
+        <div class="flow">
+        <h3 class="margin-block-end-4">5 Start Reviews</h3>
+           {% for fact in facts | randomItem %}
+            <em>{{ fact }}</em>
+            {% endfor %}
+         
+
+        <div class="clr-yellow-400"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        </div>
+
+
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<section class="section image-panel-1">
+    <div class="container">
+
+        <h2 class="text-center margin-block-end-8 clr-neutral-000">Our Mission</h2>
+        <div class="even-columns vertically-centered ">
+
+            <div class="flow ">
+                <h2 class="clr-neutral-000">{{bullet2.header}}</h2>
+                <p class="clr-neutral-000">{{bullet2.text}}</p>
+            </div>
+
+            <div class="flex-group horizontally-centered">
+                <div class="flex-group">   
+                 {% for post in bullet2.cards %}
+                              
+                    <div class="card-bullets-2">
+                        <div class="card__icon">
+                            <i class="icon {{ post.icon}} fa-3x py-1 clr-accent-400"></i>                
+                        </div>
+                        <h4 class="card-bullets__heading ">
+                        {{ post.header }}
+                        </h4>
+                        <p>{{post.text}}</p>
+                    </div>
+                
+
+                 {% endfor %}
+                 </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

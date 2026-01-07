@@ -1,0 +1,152 @@
+{% include '_header.njk' %}
+{% include '_contact-bar.njk'%}
+{% include '_navigation.njk' %}
+
+<div class="container">
+            <h1 class="heading-1 margin-block-4">{{ title }}</h1>
+         {# <div class="breadcrumb margin-block-4">
+          {% set breadcrumb = collections.all | eleventyNavigationBreadcrumb( eleventyNavigation.key, { includeSelf: true }) %}
+          {{ breadcrumb | eleventyNavigationToHtml | safe }}
+         </div> #}
+      <section class=" sidebar-grid ">
+        
+          <div>
+
+            {# <h1> {{ description }} </h1> #}
+            <!-- Slideshow container -->
+                  <div class="slideshow-container">
+
+                  <!-- Full-width images with number and caption text -->
+                   {% for proj in gallery %}
+                  <div class="mySlides fade">
+
+                  
+                  {# <div class="numbertext">1 / 10</div> #}
+                 
+                  <img src="{{ proj.image }}" alt="{{ proj.text }}" style="width:100%">
+                  {# <div class="text">{{ proj.name }}</div> #}
+                   
+                  </div>
+                 {% endfor %}
+                  
+                  <!-- Next and previous buttons -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+                
+
+                  <!-- The dots/circles -->
+                  {# <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                  <span class="dot" onclick="currentSlide(4)"></span>
+                  <span class="dot" onclick="currentSlide(5)"></span>
+                  <span class="dot" onclick="currentSlide(6)"></span>
+                  <span class="dot" onclick="currentSlide(7)"></span>
+                  <span class="dot" onclick="currentSlide(8)"></span>
+                  </div> #}
+
+                  <script>
+                  var slideIndex = 1;
+                  showSlides(slideIndex);
+
+                  // Next/previous controls
+                  function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                  }
+
+                  // Thumbnail image controls
+                  function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                  }
+
+                  function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";
+                  dots[slideIndex-1].className += " active";
+                  }
+                  </script>
+
+          
+          {# <img src="{{ image | url }}" alt="{{ image }}"></img> #}
+          <article class="flow margin-block-start-4">{{ content | safe }}</article>
+
+                 {% for post in video %} 
+            <div class="video flow">
+                  
+                  <h3> {{post.name}}</h3>
+
+                <md-block>  {{ post.link | safe }} </md-block>
+                <p> {{ post.text }}</p>
+                 
+                  
+            </div>
+                  {% endfor %}
+          </div>
+
+           <div class="sidebar flow margin-block-end-12">
+                <div class="flow">
+
+                        <div class="project-info flow">
+                              <h3 class="heading-3">Project Info</h3>
+                              <hr>
+                              <div class="flex-group clr-primary-400 vertically-centered"><i class="fas fa-user-alt fa-1x "> </i><p>{{ name }}</p></div>
+                              <hr>
+                              <div class="flex-group clr-primary-400 vertically-centered"><i class="fas fa-map-marker fa-1x "> </i><p>{{ location }}</p></div>
+                              <hr>
+                              <div class="flex-group clr-primary-400 vertically-centered"><i class="fas fa-calendar fa-1x "> </i><p>{{ year }}</p></div>
+                              <hr>
+                              <div class="flex-group clr-primary-400 vertically-centered"><i class="fas fa-building fa-1x "> </i> <p>{{ service }}</p></div>
+                        </div>      
+
+                        <h3 class="padding-block-start-8">
+                              <a class="decoration-none clr-neutral-700" href="/projects/">Other Projects</a>
+                        </h3>
+                        
+                        <ul class="flow margin-block-end-8">
+                        {% for proj in collections.projects %}
+                        <li><a href="{{ proj.url }}">{{ proj.data.h1 }}</a></li>
+                        {% endfor %}
+                        </ul>
+
+                       <div>
+                        <h3 class="margin-block-end-4">Contact Us Today!</h3> 
+                       <a class="button text-center" data-type="accent" href="tel:{{settings.phone}}"><span class="sr-only">Tel</span>Call Now!</a>
+                       </div>
+       
+                </div>
+            </div>
+      </section>  
+
+
+</div>
+
+<section class="section bg-primary-400 clr-neutral-000 margin-block-start-10">
+  <div class="container">
+
+    <div class="flex-group space-between vertically-centered">
+
+          <div class="flow">
+            <h2 class="heading-2 clr-neutral-000">{{cta.header}}</h2>
+            <p>{{cta.text}}</p>
+          </div>
+
+           <a href="/contact/" class="button" data-type="trans">Get in Touch</a>
+
+    </div>
+  </div>
+</section>
+
+
+{% include '_footer.njk' %}

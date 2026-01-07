@@ -1,0 +1,67 @@
+
+
+<div class="container section margin-block-start-8">
+
+    <div class="even-columns margin-block-8 gap-12">
+
+        <div class=" flow">
+
+            {# <img class="bg-brand-primary-200" data-position="right" src="{{contact.image}}" alt="{{contact.alt}}"> #}
+            <h2 class="heading-2">{{contact.header}}</h2>
+
+            <p>{{contact.text}}</p>
+            <p>{{contact.text2}}</p>
+            <br>
+            <a href="tel:{{settings.phone}}">Tel: {{settings.phone_display}}</a>
+            <br>
+            <br>
+
+            <a href="mailto:{{settings.email}}">{{settings.email}}</a>
+
+        </div>
+
+        <div class="vertically-centered">
+            <h2 class="heading-2 margin-block-end-4">Book Now or Get a Quote</h2>
+
+            <form 
+              name="Home Page Contact Form"
+              action="/success/" 
+              method="POST" 
+              netlify-honeypot="bot-field"
+              data-netlify-recaptcha="true" 
+              data-netlify="true">
+
+            <label>Your Name: <input type="text" placeholder="Name" name="name" /></label>   
+
+            <label>Your Email: <input type="email" placeholder="Email" name="email" /></label>
+
+           <label>Eircode: <input type="text" placeholder="Eircode" name="eircode" required /></label>
+
+                 <p class="sr-only">
+                <label>
+                Don’t fill this out if you’re human: <input type="hidden" name="bot-field" />
+                </label>
+            </p>
+
+             <p><label>Phone:<br> <input type="tel" placeholder="Phone" name="phone" required /></label></p>
+
+
+            <label>Message: </label>
+            <br>
+            <textarea name="message" placeholder="Write your message here..."></textarea>
+        
+
+            <div data-netlify-recaptcha="true"></div>
+
+            <input name="check" type="checkbox" required>  I agree to the handling of my data in accordance with the <a href="/privacy-policy/" >{{settings.name}} Privacy Policy.</a>
+            <br>
+
+          
+            <button class="button margin-block-5" data-type="accent" type="submit" value="Send">
+            <i class="padding-inline-end-4 fa fa-paper-plane "></i> SEND MESSAGE</button>
+        
+            </form>
+        </div>
+
+    </div>
+</div>

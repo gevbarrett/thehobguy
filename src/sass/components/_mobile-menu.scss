@@ -1,0 +1,67 @@
+@use '../abstracts/' as *;
+
+  /* Add an active class to highlight the current page */
+  .nav a.active {
+    color: $navigation-active-color;
+    // border-bottom: 2px solid $navigation-active-color;
+  }
+  
+  /* Hide the link that should open and close the nav on small screens */
+  .logo .icon i{
+    display: none;
+  }
+
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the nav (.icon) */
+  /* The "responsive" class is added to the nav with JavaScript when the user clicks on the icon. This class makes the nav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width:820px) {
+
+   // Hide the Nav items 
+  .nav a {display: none;}
+
+  .logo .icon i{
+  float: right;
+  display: block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  // width: 55px;
+  // border: none;
+  // background: none;
+  fill: white;
+  }
+  
+
+  // Make nav full screen 
+  .nav{
+    width: 100%;
+    background-color: none;
+    display: block; 
+    height: 0;
+  }    
+
+  // Logo Align Left
+  .logo{
+    justify-content: start;
+  }
+
+  // Style the attribute tags in the nav
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    padding: 1rem;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .nav.responsive{
+    height: 100%;
+  }
+
+  // Nav hover
+  .nav a:hover {
+    background-color: $navigation-mobile-hover;
+    border-radius: 0px;
+    color: $navigation-mobile-color-hover;
+  }
+
+  }

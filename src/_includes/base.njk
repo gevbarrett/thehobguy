@@ -1,0 +1,28 @@
+{% include '_header.njk'%}
+{% include '_contact-bar.njk'%}
+
+{% include '_navigation.njk'%}
+
+
+<div class="container margin-block-8">
+
+   
+    <div class="main-content-limit">
+          <h1 class="heading-1">{{ h1 }}</h1>
+         <div class="breadcrumb">
+          {% set breadcrumb = collections.all | eleventyNavigationBreadcrumb( eleventyNavigation.key, { includeSelf: true }) %}
+          {{ breadcrumb | eleventyNavigationToHtml | safe }}
+         </div>
+         <div class="flow">
+            {{ content | safe }}
+         </div>
+         
+    </div>
+   
+
+</div>
+
+{% include '_cta-button-section.njk' %}
+
+
+{% include '_footer.njk'%}

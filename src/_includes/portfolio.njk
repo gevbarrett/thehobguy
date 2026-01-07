@@ -1,0 +1,109 @@
+
+{% include '_header.njk' %}
+{% include '_contact-bar.njk'%}
+{% include '_navigation.njk' %}
+
+
+
+<div class="container margin-block-8">
+    <h1 class="heading-1">{{ h1 }}</h1>
+         <div class="breadcrumb">
+          {% set breadcrumb = collections.all | eleventyNavigationBreadcrumb( eleventyNavigation.key, { includeSelf: true }) %}
+          {{ breadcrumb | eleventyNavigationToHtml | safe }}
+         </div>
+   
+    <div class="main-content-limit flow margin-block-start-8">
+         {{ content | safe }}
+
+
+
+    </div>
+
+</div>
+
+
+<div class="container">
+<!-- Images used to open the lightbox -->
+<div class="modal-row">
+      {% for proj in gallery %}
+  <div class="modal-column">
+    <img src="{{ proj.image }}" onclick="openModal();currentSlide({{loop.index}})" class="hover-shadow" alt="{{proj.text}}">
+  </div>
+   {% endfor %}
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+{% for proj in gallery %}
+    <div class="mySlidesmodal">
+      {# <div class="numbertext">{{loop.index}}/{{loop.revindex}}</div> #}
+      <img src="{{ proj.image }}" style="width:100%" alt="{{proj.text}}">
+      <div class="caption-container">
+      
+      <p id="caption">{{ proj.text }}</p>
+      
+    </div>
+    </div>
+
+     <!-- Caption text -->
+   
+    
+
+ {% endfor %}
+
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+   
+
+  </div>
+</div>
+
+</div>
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlidesmodal");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+{% include '_cta-button-section.njk' %}
+
+{% include '_footer.njk' %}

@@ -1,0 +1,83 @@
+  </main>
+
+  <footer class="site-footer bg-primary-700 padding-block-10">
+
+   
+      <div class="container" >
+       <div class="even-columns">
+
+                 <div class="flow clr-neutral-000">
+                    <h3 class="clr-neutral-000 limit-text">{{settings.name}}</h3>
+                    <p>{{settings.description}}</p>
+                </div>  
+                  
+        
+
+              <div class="flow clr-neutral-000">
+                    <h3 class="clr-neutral-000" >Contact</h3>
+                    <div class="padding-1"><p><i class="fas fa-map-marker fa-1x"></i> {{settings.address1}}<br>{{settings.address2}}<br>{{settings.address3}}</p></div> 
+                    <div class="contact-item"><i class="fas fa-phone fa-1x"></i><a href="tel:{{settings.phone}}"><span class="sr-only">Tel</span> {{settings.phone_display}}</a></div>
+                    <div class="contact-item"><i class="fas fa-envelope-square fa-1x"></i><a href="mailto:{{settings.email}}"> Email: {{settings.email}}</a></div> 
+                </div>
+      
+            <div class="foot-logo flow">
+                    <h3 class="flow clr-neutral-000">Quick Links</h3>
+                    <div>
+                         <ul>
+                            <li><a href="/">Home</a></li>
+                            {% set navPages = collections.all | eleventyNavigation('Home') %}
+                            {%- for entry in navPages %}   
+                            {% if not entry.hide %}    
+ 
+                            <li><a {% if entry.url == page.url %} class="my-active-class"{% endif %} href="{{ entry.url | url }}">{{ entry.title }}</a></li>
+                            {%- endif %}
+                            {%- endfor %}
+            
+                            <li> <a href="/privacy-policy/">Privacy Policy</a></li>
+                          </ul>
+                    </div>
+            </div>
+
+
+              <div class="flow">
+                  <h3 class="clr-neutral-000 flow">Follow Us</h3>
+                  <div class="flex-group">
+                  <a href="{{settings.facebook}}"><i class="fab fa-facebook fa-2x"></i><span class="sr-only">Facebook</span></a>
+                  <a href="{{settings.instagram}}"><i class="fab fa-instagram fa-2x"></i><span class="sr-only">Instagram Link</span></a>
+                  <a href="{{settings.google}}"><i class="fab fa-google fa-2x"></i><span class="sr-only">Google Link</span></a>
+                  <a href="{{settings.linkedin}}"><i class="fab fa-linkedin fa-2x"></i><span class="sr-only">linkedin Link</span></a>
+                  </div>
+              </div>
+        
+              
+
+                
+
+      </div>
+    </div> {# Container Close #}
+
+
+    <div class="container clr-neutral-000">
+      {# <nav aria-label="primary navigation  ">
+        <ul class="nav | margin-block-6 clr-neutral-000 flex-group mx-auto">
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </nav> #}
+
+      <div class="fine-print | margin-block-start-10 fs-200 text-center">
+        © {% year %} {{settings.name}} <br> Designed by <a href="https://directwebdesign.ie">Direct Web Design</a>
+        {# <a href="">Privacy </a>•
+        <a href="">Terms </a>•
+        <a href="">Sitemap</a> #}
+      </div>
+    </div>
+</footer>
+
+
+</body>
+
+</html>

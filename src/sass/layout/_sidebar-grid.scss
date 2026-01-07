@@ -1,0 +1,21 @@
+@use "../abstracts/" as *;
+
+.sidebar-grid{
+    display: grid;
+    gap: var(--grid-gap, $grid-gap);
+
+    // img{
+    //     max-height: 400px;
+    // }
+
+    @include mq(1000px) {
+        grid-auto-flow: column;
+        grid-template-columns: 2fr 1fr;
+
+      }
+
+
+    li{
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,56 @@
+{% include '_header.njk'%}
+{% include '_navigation.njk'%}
+
+
+<div class="container margin-block-8">
+
+    <div class="main-content-limit">
+
+            <div class=" flow">
+                    <h1 class="heading-1">{{ h1}}</h1>
+                    <div class="breadcrumb">
+                    {% set breadcrumb = collections.all | eleventyNavigationBreadcrumb( eleventyNavigation.key, { includeSelf: true }) %}
+                    {{ breadcrumb | eleventyNavigationToHtml | safe }}
+                    </div>
+                    {{ content | safe }}
+
+                    <div class="grid-auto-fit">
+                    {% for post in team %}
+                    <div class="single-column- flow">
+
+                        <img class="border-radius-2" loading="lazy" src="{{post.image}}" alt="{{post.alt}}">
+
+                        <div>
+                            <h3 class="margin-block-start-2">{{post.name}}</h3>
+                            <em>{{ post.position}}</em>
+                        </div>
+
+                        <div>
+                            <p>{{post.text}}</p>
+                        </div>
+
+
+                        
+
+                    </div>
+                    {% endfor %}
+                    </div>
+
+             </div>
+
+
+            
+
+
+
+    </div>
+
+   
+
+   
+
+</div>
+
+
+
+{% include '_footer.njk'%}

@@ -1,0 +1,42 @@
+{% include '_header.njk' %}
+{% include '_contact-bar.njk'%}
+{% include '_navigation.njk' %}
+
+<section class="margin-block-8 flow">
+
+
+     <div class="container">
+         
+            <h1 class="heading-1">{{h1}}</h1>
+           
+            <div class="breadcrumb">
+                {% set breadcrumb = collections.all | eleventyNavigationBreadcrumb("Services", { includeSelf: true }) %}
+                {{ breadcrumb | eleventyNavigationToHtml | safe }}
+            </div>
+
+
+    </div>
+    
+        <div class="container">
+           
+
+            <div class="grid-auto-fit">
+                {% for post in collections.services | reverse %}
+                <div class="card">
+                     {# <i class="{{post.data.icon}} fa-3x"></i></a> #}
+                     <a href="{{post.url}}"><img src="{{post.data.image}}" alt="{{post.data.alt}}"></a>
+                    <div class="flow">
+                        <a class="decoration-none" href="{{post.url}}"><h3>{{post.data.h1}}</h3></a>
+                        <p>{{post.data.description}}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            
+        </div>   
+</section>
+
+{% include '_cta-button-section.njk' %}
+
+
+{% include '_footer.njk'%}
