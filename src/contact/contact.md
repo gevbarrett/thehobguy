@@ -9,6 +9,7 @@ eleventyNavigation:
   key: Contact
   parent: Home
   order: 105
+  hide: true
 ---
 ## Contact
 

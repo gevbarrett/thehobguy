@@ -1,7 +1,7 @@
 ---
-title: Acme Industries
-h1: Acme Industries
-description: 
+title: The Hob Guy | Gas Cooker, Oven & Hob Installation & Fitting
+h1: The Hob Guy
+description: ""
 layout: "home.njk"
 image: 
 eleventyNavigation:
@@ -10,9 +10,9 @@ eleventyNavigation:
 hero:
   image: /images/group-on-computer.webp
   alt: 
-  header: Acme Industries
-  subhead: Acme Industries
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus vel lectus ut rhoncus. Ut eu mi id risus convallis euismod quis a libero. Etiam et lacinia augue."
+  header: Gas Cooker Installer
+  subhead: Professional Gas Cooker Installation – Safe, Fast & Certified
+  text: "Get your new gas cooker, hob, or oven installed by a Gas Safe Registered engineer today. Serving Kilkenny, Carlow, Waterford, Wexford and tipperary."
   button1: Our Services
   button2: Contact Us
   link1: /services/
@@ -34,15 +34,15 @@ bio:
   check4: test
 
 bullet:
-  - icon: fa-light fa-people
-    header: Social Activities
+  - icon: fa-light fa-fire-flame-simple
+    header: Gas Cooker Installation & Fitting
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus vel lectus ut rhoncus. Ut eu mi id risus convallis euismod quis a libero. Etiam et lacinia augue."
-  - icon: fa-light fa-circle-info
-    header: Information
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus vel lectus ut rhoncus. Ut eu mi id risus convallis euismod quis a libero. Etiam et lacinia augue."
-  - icon: fa-light fa-money-bill
-    header: Resources Library 
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus vel lectus ut rhoncus. Ut eu mi id risus convallis euismod quis a libero. Etiam et lacinia augue." 
+  - icon: fa-light fa-certificate
+    header: RGI Registered 
+    text: "We are RGI Registered and can provide you with a Gas installation certificate."
+  - icon: fa-light fa-fire-burner
+    header: Gas Hob to LPG
+    text: "We can convert gas hobs to LPG" 
 
 bullet2:
   header: "Lorem ipsum dolor"
@@ -57,25 +57,25 @@ bullet2:
     - icon: fa-light fa-excavator
       header: High Standards
       text: "High standards from concept through to project completion" 
-    - icon: fa-light fa-map
+    - icon: fa-light fa-fire-burner
       header: Nationwide Reach
       text: "Based in Tipperary, serving across Ireland" 
 
 panel:
-  header: consectetur adipiscing 
-  image: /images/portrait.jpg
+  header: Our Gas Cooker Install Services
+  image: /images/cooker.jpg
   alt: 
-  subHead: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus vel lectus ut rhoncus. Ut eu mi id risus convallis euismod quis a libero. Etiam et lacinia augue."
+  subHead: "Gas appliances must be installed correctly to avoid leaks, carbon monoxide risks, and invalid warranties. Our certified engineers ensure your cooker is installed safely, legally, and to the highest standard — protecting your home and your family."
   info:
     - icon: fa-solid fa-shield-check
-      header: Lorem ipsum
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus vel lectus ut rhoncus. Ut eu mi id risus convallis euismod quis a libero. Etiam et lacinia augue."
+      header: Disconnection of your old gas cooker (if required)
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     - icon: fa-solid fa-shield-check
-      header: Lorem ipsum
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus vel lectus ut rhoncus. Ut eu mi id risus convallis euismod quis a libero. Etiam et lacinia augue."
+      header: Professional installation of your new gas cooker
+      text: "Lorem ipsum dolor sit amet,"
     - icon: fa-solid fa-shield-check
-      header: Lorem ipsum
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus vel lectus ut rhoncus. Ut eu mi id risus convallis euismod quis a libero. Etiam et lacinia augue." 
+      header: Full safety checks and functional testing
+      text: "Secure gas connection and leak testing" 
 
 testimonials:
   header: Read our 5-star reviews on Google

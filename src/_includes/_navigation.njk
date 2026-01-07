@@ -16,14 +16,14 @@
 
           <div class="nav" id="myTopnav">
             <a href="/">Home</a>
-            {% set navPages = collections.all | eleventyNavigation('Home') %}
-                {%- for entry in navPages %}
-                {% if not entry.hide %}    
-                    <a {% if entry.url == page.url %} class="clr-primary-000 active"{% endif %} href="{{ entry.url | url }}">{{ entry.title }}</a>    
-                {%- endif %}
-                {%- endfor %}
+            <a href="/">About</a>
+            <a href="/">Services</a>
+            <a href="/">Contact</a>
+
+
+            
           
-           <a href="/contact/" class="button" data-type="accent">Button</a>
+           <a href="/" class="button" data-type="accent">Get Quote</a>
 
           </div>
 

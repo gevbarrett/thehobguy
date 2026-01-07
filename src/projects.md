@@ -8,6 +8,7 @@ eleventyNavigation:
   key: Projects
   parent: Home
   order: 103
+  hide: true
 cta:
   header: Looking for our Services
   text: Call today and get a quote. 

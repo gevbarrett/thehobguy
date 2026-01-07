@@ -3,7 +3,7 @@
 .hero-bg{
 
     // Mobile Hero
-    background-image: linear-gradient(180deg, rgba(52, 87, 148, 0.2), rgba(52, 87, 148, .2)), url("/images/video-placeholder.webp"); /* The image used */
+    background-image: linear-gradient(180deg, rgba(52, 87, 148, 0.2), rgba(52, 87, 148, .2)), url("/images/hero.png"); /* The image used */
     background-color: $color-primary-400; /* Used if the image is unavailable */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -20,7 +20,7 @@
     }
 
     @include mq(small){
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 70%), rgba(0, 0, 0, 0)), url("/images/video-placeholder.webp"); /* The image used */
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 70%), rgba(0, 0, 0, 0)), url("/images/hero.jpg"); /* The image used */
 
 
     }

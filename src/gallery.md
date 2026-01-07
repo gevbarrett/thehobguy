@@ -9,6 +9,7 @@ eleventyNavigation:
   key: Gallery
   parent: Home
   order: 104
+  hide: true
 image: /images/house.jpg
 gallery:
   - text: 
