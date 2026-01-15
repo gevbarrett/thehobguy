@@ -8,7 +8,7 @@ $-clr-grey-dark: hsl(0 0% 25%);
 $-clr-blue-very-light: hsl(213 47% 96%);
 $-clr-blue-light: hsl(218 39% 86%);
 $-clr-blue-mid: #3c85c6;
-$-clr-blue-dark: hsl(218 36% 23%);
+$-clr-blue-dark: #263550;
 
 $-clr-green-very-light: hsl(168 98% 81%);
 $-clr-green-light: hsl(168 96% 51%);
@@ -43,7 +43,7 @@ $default: (
   "accent": (
     "100": $-clr-green-very-light,
     "200": $-clr-green-light,
-    "400": $-clr-green-mid,
+    "400": $-clr-yellow-mid,
     "500": $-clr-green-mid,
     "700": $-clr-green-dark,
   ),
