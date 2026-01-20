@@ -8,7 +8,7 @@ eleventyNavigation:
   key: Home
 
 hero:
-  image: /images/group-on-computer.webp
+  image: /images/
   alt: 
   header: Gas Cooker Installer
   subhead: Professional Gas Cooker Installation – Safe, Fast & Certified
@@ -22,9 +22,9 @@ hero:
 bio:
   image: /images/install-1.jpg
   image2: /images/hero.jpg
-  fallback: /images/girl-on-phone.webp
-  alt:
-  alt2: 
+  fallback: /images/install-1.jpg
+  alt: ""
+  alt2: ""
   header: Trusted Gas Cooker Installation Specialists
   para1: "We are a dedicated gas cooker installation service committed to delivering safe, reliable, and fully compliant installations for homes and rental properties. "
   para2: "Our experienced, fully certified gas engineers carry out each installation with precision and attention to detail — from the initial connection to final safety testing."
@@ -98,17 +98,16 @@ panel:
 #       company: ""
 
 test:
-  header: Great Service
+  header: Highly recommended!
   image: /images/wrench.png
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus vel lectus ut rhoncus. Ut eu mi id risus conval"
+  text: "We hired the hob guy to install our new gas cooker and the service was excellent. The engineer ensured everything was working perfectly before he left."
+
 
 cta:
   header: Book your Gas Cooker Installation Today
-  text: "We offer clear communication, upfront pricing, and flexible appointment times to suit your schedule."
-  list:
-    - icon: fa-solid fa-tractor
-      text: Food & Agriculture
-
+  text: "We hired the hob guy to install our new gas cooker and the service was excellent. The engineer ensured everything was working perfectly before he left. Highly recommended!"
+  
+ 
 logos:
   - image: /images/logos/bosch.jpg
     alt:
