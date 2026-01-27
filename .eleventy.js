@@ -3,7 +3,6 @@ import EleventyVitePlugin from "@11ty/eleventy-plugin-vite";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 
 import { DateTime } from "luxon";
-import path from "path";
 
 
 export default async function(eleventyConfig) {

@@ -1,6 +1,6 @@
 ---
-title: Gas Cooker Installation | The Hob Guy
-h1: The Hob Guy
+title: "Gas Cooker Installation | The Hob Guy"
+h1: "The Hob Guy"
 description: "Professional Gas Cooker Installation – Safe, Fast & Certified. Get your new gas cooker, hob, or oven installed by a Gas Safe Registered engineer today. Serving Kilkenny, Carlow, Waterford, Wexford and Tipperary."
 layout: "home.njk"
 image: 
@@ -8,24 +8,24 @@ eleventyNavigation:
   key: Home
 
 hero:
-  image: /images/
+  image: "/images/"
   alt: 
-  header: Gas Cooker Installer
-  subhead: Professional Gas Cooker Installation – Safe, Fast & Certified
+  header: "Gas Cooker Installer"
+  subhead: "Professional Gas Cooker Installation – Safe, Fast & Certified"
   text: "Get your new gas cooker, hob, or oven installed by a Gas Safe Registered engineer today. Serving Kilkenny, Carlow, Waterford, Wexford and tipperary."
   button1: Get Quote
   button2: Contact Us
   link1: "#contact"
-  link2: /contact/
+  link2: "#contact"
 
 
 bio:
-  image: /images/install-1.jpg
-  image2: /images/hero.jpg
-  fallback: /images/install-1.jpg
+  image: "/images/install-1.jpg"
+  image2: "/images/hero.jpg"
+  fallback: "/images/install-1.jpg"
   alt: "image of gas cooker rings burning"
   alt2: "image of a technician installing a gas cooker hob in a kitchen"
-  header: Trusted Gas Cooker Installation Specialists
+  header: "Trusted Gas Cooker Installation Specialists"
   para1: "We are a dedicated gas cooker installation service committed to delivering safe, reliable, and fully compliant installations for homes and rental properties. "
   para2: "Our experienced, fully certified gas engineers carry out each installation with precision and attention to detail — from the initial connection to final safety testing."
   check1: Homeowners
@@ -34,14 +34,14 @@ bio:
   check4: Property Managers
 
 bullet:
-  - icon: fa-light fa-fire-flame-simple
-    header: Gas Cooker Installation & Fitting
-    text: "Whether you’re replacing an old cooker or installing a brand-new appliance, we handle everything from start to finish."
-  - icon: fa-light fa-certificate
-    header: RGI Registered 
+  - icon: "fa-light fa-fire-flame-simple"
+    header: "Gas Cooker Installation & Fitting"
+    text: "Whether you're replacing an old cooker or installing a brand-new appliance, we handle everything from start to finish."
+  - icon: "fa-light fa-certificate"
+    header: "RGI Registered" 
     text: "We are RGI Registered and can provide you with a Gas installation certificate."
-  - icon: fa-light fa-fire-burner
-    header: Gas Hob to LPG
+  - icon: "fa-light fa-fire-burner"
+    header: "Gas Hob to LPG"
     text: "We can convert gas hobs to LPG. Many gas cookers can be converted to work with liquefied petroleum gas (LPG)." 
 
 # bullet2:
@@ -62,8 +62,8 @@ bullet:
 #       text: "" 
 
 panel:
-  header: Our Gas Cooker Install Services
-  image: /images/cooker.jpg
+  header: "Our Gas Cooker Install Services"
+  image: "/images/cooker.jpg"
   alt: "image of a gas cooker being installed"
   subHead: "Gas appliances must be installed correctly to avoid leaks, carbon monoxide risks, and invalid warranties. Our certified engineers ensure your cooker is installed safely, legally, and to the highest standard — protecting your home and your family."
   info:
@@ -134,10 +134,10 @@ faq:
       answer: "Yes. We can safely disconnect your existing gas cooker as part of the installation. If you require removal or disposal, please let us know when booking."
     - question: "Will you test the cooker after installation?"
       answer: "Every installation includes leak testing, pressure checks, and full operational testing to ensure your cooker is working safely and correctly."
-    - question: "What if my gas connection doesn’t meet regulations?"
-      answer: "If the existing gas connection is unsafe or non-compliant, we’ll explain the issue clearly and advise on the necessary upgrades before proceeding. No work is carried out without your approval."
+    - question: "What if my gas connection doesn't meet regulations?"
+      answer: "If the existing gas connection is unsafe or non-compliant, we'll explain the issue clearly and advise on the necessary upgrades before proceeding. No work is carried out without your approval."
     - question: "How do I book a gas cooker installation?"
-      answer: "You can call us, book online, or request a quote through our website. We’ll arrange a convenient time that works for you."
+      answer: "You can call us, book online, or request a quote through our website. We'll arrange a convenient time that works for you."
 
 # cta2:
 #   header:
