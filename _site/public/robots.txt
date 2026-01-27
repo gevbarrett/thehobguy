@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /success/
 Disallow: /admin/
 
-Sitemap: https://.ie/sitemap.xml
+Sitemap: https://thehobguy.ie.ie/sitemap.xml

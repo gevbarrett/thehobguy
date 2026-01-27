@@ -7,7 +7,8 @@ templateEngineOverride: njk,md
 header: Privacy
 eleventyNavigation:
   key: Privacy Policy
-  parent: Contact
+  parent: Home
+  hide: true
 ---
 ## Privacy Policy 
 

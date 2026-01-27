@@ -1,7 +1,7 @@
 ---
-title: The Hob Guy | Gas Cooker, Oven & Hob Installation & Fitting
+title: Gas Cooker Installation | The Hob Guy
 h1: The Hob Guy
-description: ""
+description: "Professional Gas Cooker Installation – Safe, Fast & Certified. Get your new gas cooker, hob, or oven installed by a Gas Safe Registered engineer today. Serving Kilkenny, Carlow, Waterford, Wexford and Tipperary."
 layout: "home.njk"
 image: 
 eleventyNavigation:
@@ -23,8 +23,8 @@ bio:
   image: /images/install-1.jpg
   image2: /images/hero.jpg
   fallback: /images/install-1.jpg
-  alt: ""
-  alt2: ""
+  alt: "image of gas cooker rings burning"
+  alt2: "image of a technician installing a gas cooker hob in a kitchen"
   header: Trusted Gas Cooker Installation Specialists
   para1: "We are a dedicated gas cooker installation service committed to delivering safe, reliable, and fully compliant installations for homes and rental properties. "
   para2: "Our experienced, fully certified gas engineers carry out each installation with precision and attention to detail — from the initial connection to final safety testing."
@@ -64,7 +64,7 @@ bullet:
 panel:
   header: Our Gas Cooker Install Services
   image: /images/cooker.jpg
-  alt: 
+  alt: "image of a gas cooker being installed"
   subHead: "Gas appliances must be installed correctly to avoid leaks, carbon monoxide risks, and invalid warranties. Our certified engineers ensure your cooker is installed safely, legally, and to the highest standard — protecting your home and your family."
   info:
     - icon: fa-solid fa-blanket-fire
@@ -110,24 +110,24 @@ cta:
  
 logos:
   - image: /images/logos/bosch.jpg
-    alt:
+    alt: "Bosch logo"
   - image: /images/logos/miele.jpg
-    alt:
+    alt: "Miele logo"
   - image: /images/logos/whirlpool.jpg
-    alt:
+    alt: "Whirlpool logo"
   - image: /images/logos/siemens.jpg
-    alt:
+    alt: "Siemens logo"
   - image: /images/logos/beko.jpg
-    alt:
+    alt: "Beko logo"
   - image: /images/logos/zanussi.jpg
-    alt:
+    alt: "Zanussi logo"
 
 faq:
   header: Frequently Asked Questions
   image: /images/
   fallback: /images/
-  alt: looking at a tablet computer.
-  list:
+  alt: "image of a plumbers wrench"
+  list: 
     - question: Do I need a certified engineer to install a gas cooker?
       answer: "Yes. Gas cookers must be installed by a qualified, gas-certified engineer to ensure safety and legal compliance. Improper installation can be dangerous and may invalidate your appliance warranty."
     - question: "Can you disconnect and remove my old gas cooker?" 

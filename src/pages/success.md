@@ -6,7 +6,8 @@ description: Thank you for contacting {{settings.name}}. We will be in touch as 
 templateEngineOverride: njk,md
 eleventyNavigation:
   key: Email Successful
-  parent: Contact
+  parent: Home
+  hide: true
 ---
 
 ### Email Received Successfully 
