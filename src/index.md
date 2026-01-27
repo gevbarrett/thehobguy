@@ -139,13 +139,13 @@ faq:
     - question: "How do I book a gas cooker installation?"
       answer: "You can call us, book online, or request a quote through our website. We’ll arrange a convenient time that works for you."
 
-cta2:
-  header:
-  text:
+# cta2:
+#   header:
+#   text:
 
-map:
-  header: Lorem ipsum
-  text: "OLorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus vel lectus ut rhoncus. Ut eu mi id risus conval"
+# map:
+#   header: Lorem ipsum
+#   text: "OLorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus vel lectus ut rhoncus. Ut eu mi id risus conval"
 
 contact:
   image: /images/sensory-room.jpg
