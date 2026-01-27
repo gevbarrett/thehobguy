@@ -1,0 +1,10 @@
+@use "../abstracts/" as *;
+
+
+@each $size-name, $size-value in $sizes {
+    .gap {
+      &-#{$size-name} {
+        gap: $size-value;
+      }
+    }
+}

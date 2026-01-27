@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /success/
+Disallow: /admin/
+
+Sitemap: https://thehobguy.ie.ie/sitemap.xml
