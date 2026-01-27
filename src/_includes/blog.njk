@@ -10,8 +10,8 @@
         
             <h1 class="heading-1 margin-block-start-8">{{ h1 }}</h1>
                <div class="breadcrumb margin-block-end-8">
-                {% set breadcrumb = collections.all | eleventyNavigationBreadcrumb("Blog", { includeSelf: true }) %}
-                {{ breadcrumb | eleventyNavigationToHtml | safe }}
+                {# {% set breadcrumb = collections.all | eleventyNavigationBreadcrumb("Blog", { includeSelf: true }) %}
+                {{ breadcrumb | eleventyNavigationToHtml | safe }} #}
             </div>
             {% for post in collections.blog %}
             <div class="max-image even-columns margin-block-end-10">
